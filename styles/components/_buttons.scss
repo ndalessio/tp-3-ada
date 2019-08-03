@@ -1,0 +1,90 @@
+#button-container{
+    display: none;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+    #button-load-more{
+        font-size: 12px;
+        padding: 6px 20px;
+        border: 1px solid $title-color;
+        text-transform: uppercase;
+        background-color: transparent;
+        line-height: 2;
+        letter-spacing: .5px;
+        font-weight: 200;
+        outline: none;
+        transition: background .5s ease, color .5s ease;
+        cursor: pointer;
+    }
+
+    #button-load-more:hover{
+        background-color: $title-color;
+        color: $bg-color;
+    }
+}
+
+#modal-close-button{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    transition: background .5s ease;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    #icon{
+        color: white;
+        font-family: $main-font;
+        transform: rotate(45deg);
+        font-size: 40px;
+        font-weight: 100;
+    }
+}
+
+#modal-close-button:hover{
+    background: $modal-title-color;
+}
+
+
+
+// boton hamburguesa
+.hamburger-button {
+    width: 75px;
+    height: 75px;
+    background-color: $bg-color;
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #e0e0e0;
+    visibility:hidden;
+    @media (max-width: $mobile-width){
+        visibility:visible;
+    }
+    @media (max-width: $mobile-width-2){
+        visibility:visible;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.hamburger .line{
+width: 30px;
+height: 1px;
+background-color: $main-font-color;
+display: block;
+margin: 8px auto;
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+cursor: pointer;
+}

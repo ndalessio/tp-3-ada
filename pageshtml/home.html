@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buscador de películas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../styles/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="home">
+        <header id="header">
+            <div id="icon">
+                <a href="#">
+                    <img src="../img/ada-logo.svg" id="ada-logo">
+                </a>
+            </div>
+            <div id="searcher">
+                <div id="searcher-container">
+                        <input id="search" type="text" placeholder="Search for a movie...">
+                        <img src="../assets 2/assets/search.png">
+                </div>
+                
+            </div>
+            <div class="hamburger-button" id="hamburger-button">
+                <div class="hamburger" id="hamburger-1">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+            </div>
+            <div class="hamburger-menu-bg" id="hamburger-menu-bg">
+                <nav id="nav-ham">
+                    <ul id="nav-list-ham" class="nav-list">
+                        <li class="nav-item-ham">
+                            <a href="#">
+                                <div id="popular-item-ham" class="item-data">
+                                    <img src="../assets 2/assets/popular.png">
+                                    <h5>POPULAR</h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item-ham">
+                            <a href="#">
+                                <div id="top-rated-item-ham" class="item-data">
+                                    <img src="../assets 2/assets/top_rated.png">
+                                    <h5>TOP RATED</h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item-ham">
+                            <a href="#">
+                                <div id="upcoming-item-ham" class="item-data">
+                                    <img src="../assets 2/assets/upcoming.png">
+                                    <h5>UPCOMING</h5>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item-ham">
+                            <a href="#">
+                                <div id="now-playing-item-ham" class="item-data">
+                                    <img src="../assets 2/assets/now_playing.png">
+                                    <h5>NOW PLAYING</h5>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </header>
+        <main>
+            <nav id="nav">
+                <ul id="nav-list" class="nav-list">
+                    <li class="nav-item">
+                        <a href="#">
+                            <div id="popular-item" class="item-data">
+                                <img src="../assets 2/assets/popular.png">
+                                <h5>POPULAR</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <div id="top-rated-item" class="item-data">
+                                <img src="../assets 2/assets/top_rated.png">
+                                <h5>TOP RATED</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <div id="upcoming-item" class="item-data">
+                                <img src="../assets 2/assets/upcoming.png">
+                                <h5>UPCOMING</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <div id="now-playing-item" class="item-data">
+                                <img src="../assets 2/assets/now_playing.png">
+                                <h5>NOW PLAYING</h5>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="section">
+                <div id="banner">
+                    <p id="page-title">THE MOVIE DB APP</p>
+                    <div class="img-container" id='banner-image'></div>
+                </div>
+                <div id="category-section">
+                    <div id="popular-movies" class="movie-section">
+                        <div class="movies-container">
+                            <div class="container-header">
+                                <p class="movie-category">Popular Movies</p>
+                                <p class="view-all" id="popular-view-all">View all →</p>
+                            </div>
+                            <div id="popular-container" class="movie-container">
+                                <div class="movie-box">
+                                    <div class="movie-box-content" href="#">
+                                        <img src="" alt="" class="movie-poster">
+                                        <p class="movie-title"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="top-rated-movies" class="movie-section">
+                        <div class="movies-container">
+                            <div class="container-header">
+                                <p class="movie-category">Top Rated Movies</p>
+                                <p class="view-all" id="top-rated-view-all">View all →</p>
+                            </div>
+                            <div id="top-rated-container" class="movie-container">
+                                <div class="movie-box">
+                                    <div class="movie-box-content" href="#">
+                                        <img src="" alt="" class="movie-poster">
+                                        <p class="movie-title"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="now-playing-movies" class="movie-section">
+                        <div class="movies-container">
+                            <div class="container-header">
+                                <p class="movie-category">Now Playing Movies</p>
+                                <p class="view-all" id="now-playing-view-all">View all →</p>
+                            </div>
+                            <div id="now-playing-container" class="movie-container">
+                                <div class="movie-box">
+                                    <div class="movie-box-content" href="#">
+                                        <img src="" alt="" class="movie-poster">
+                                        <p class="movie-title"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="upcoming-movies" class="movie-section">
+                        <div class="movies-container">
+                            <div class="container-header">
+                                <p class="movie-category">Upcoming Movies</p>
+                                <p class="view-all" id="upcoming-view-all">View all →</p>
+                            </div>
+                            <div id="upcoming-container" class="movie-container">
+                                <div class="movie-box">
+                                    <div class="movie-box-content" href="#">
+                                        <img src="" alt="" class="movie-poster">
+                                        <p class="movie-title"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="twenty-cat-container">
+                    <div id="container-header" class="container-header">
+                        <p id="movie-category"></p>
+                        <p id="movies-amount"></p>
+                    </div>
+                    <div id="twenty-cat-movies">
+                        <div id="movie-box" class="movie-box">
+                            <div class="movie-box-content" href="#">
+                                <img src="" alt="" class="movie-poster">
+                                <p class="movie-title"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="button-container">
+                        <button id="button-load-more">Load more</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="modal">
+        <div id="modal-content">
+            <div id="modal-header">
+                <img src="" alt="" id="modal-movie-poster">
+                <div id="modal-title-content">
+                    <div id="modal-movie-title"></div>
+                    <div id="modal-tagline" class="modal-text"></div>
+                </div>
+                <img src="" alt="" id="modal-bg-image">
+            </div>
+            <div id="modal-body">
+                <div id="modal-info">
+                    <div id="modal-overview" class="modal-text"></div>
+                    <div id="modal-genre">
+                        <div id="genre-title" class="modal-body-title">GENRES</div>
+                        <div id="genre-text" class="modal-text"></div>
+                    </div>
+                    <div id="modal-date">
+                        <div id="date-title" class="modal-body-title">RELEASE DATE</div>
+                        <div id="date-text" class="modal-text"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-close-button">
+                <div id="icon">+</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+
+</html>

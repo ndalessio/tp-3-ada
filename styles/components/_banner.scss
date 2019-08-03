@@ -1,0 +1,34 @@
+#home{
+    section{
+        #banner{
+            width: 100%;
+            height: 390px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: $mobile-width-2){
+                height: 280px;
+            }
+
+            div{
+                background-image: url('../../img/batman.jpg');
+                width: 100%;
+                height: 100%;
+                background-position-y: 50%;
+                background-position-x: 50%;
+                background-size: cover;
+                opacity: 0.4;
+            }
+            #page-title{
+                position: absolute;
+                font-family: $main-font;
+                font-size: $page-title-font-size;
+                color: $title-color;
+                font-weight: 500;
+                padding-bottom: 44px;
+            }
+        }
+    }   
+}

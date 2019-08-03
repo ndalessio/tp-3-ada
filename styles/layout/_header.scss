@@ -1,0 +1,67 @@
+#header{
+    width: 100%;
+    height: 75px;
+    background-color:white;
+    position:fixed;
+    z-index: 3;
+
+    @media (max-width: $mobile-width-2){
+        height: 50px;
+    }
+    
+    #icon{
+        width:95px;
+        height:75px;
+        background-color: #081c24;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $mobile-width-2){
+            width: 80px;
+            height: 50px;
+        }
+
+        img{
+            height: 45px;
+        }
+    }
+}
+
+#searcher{
+    margin-left: 95px;
+    z-index: 1;
+    padding-left: 25px;
+    img, input{
+        position: absolute;
+        top: 0;
+    }
+    img {
+        width: 17px;
+        opacity: 0.5;
+        margin-top: 30px;
+        left: 137px;
+        padding-left: 25px;
+        transition: opacity .5 ease;
+        @media (max-width: $mobile-width-2){
+            margin-top: 18px;
+            left: 90px;
+        }
+    }
+    input{
+        height: 100%;
+        width: 80%;
+        border: none;
+        padding-left: 70px;
+        font-family: $main-font;
+        color: $title-color;
+        font-weight: 300;
+        outline: none;
+
+        @media (max-width: $mobile-width-2){
+            padding-left: 45px;
+        }
+    }
+}
+
+
